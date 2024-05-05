@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        .banner-image {
+            background-image: url('img/wallhaven-4gjzj7.jpg');
+        }
+    </style>
+</head>
+
+<body style="background-color: #001F3F">
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a style="color: rgb(255, 255, 255);" class="navbar-brand">Dody Roky Immanuel Nainggolan</a>
+            <form class="d-flex" role="search" method="post"
+                action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+                <input class="form-control me-2" type="search" placeholder="Cari" aria-label="Cari" name="search">
+                <button class="btn btn-outline-success" type="submit">Cari</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+        <div class="content text-center">
+            <h1 class="text-white">SELAMAT DATANG</h1>
+            <p></p>
+        </div>
+    </div>
+
+    <!-- Tentang Saya -->
+    <div style="background-color:#003366;" class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-md-2 py-4"></div>
+            <div class="col-md-8 py-4 text-center">
+                <h3 style="color: #C0C0C0;">TENTANG SAYA</h3>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-center">
+                <p style="color: #C0C0C0;">Halo, perkenalkan nama saya DODY ROKY IMMANUEL NAINGGOLAN. Saya seorang
+                    mahasiswa di Fakultas Teknik, Universitas Riau, jurusan Teknik Elektro, program studi Teknik
+                    Informatika.</p>
+            </div>
+            <div class="col-md-3 py-4"></div>
+        </div>
+    </div>
+
+    <!-- Proyek -->
+    <div style="background-color:#003366;" class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-md-7 py-4">
+                <h3 style="color: #C0C0C0;">PROYEK</h3>
+                <p style="color: #C0C0C0;">Ini adalah proyek saya, yaitu mendesain ulang situs web beranda Universitas
+                    Riau.</p>
+                <button type="button" class="btn btn-warning rounded-5"
+                    style="background-color: #f2b541;">Selengkapnya</button>
+            </div>
+            <div class="col-md-5 py-1 mb-3">
+                <img src="test123.png" alt="" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontak -->
+    <section id="kontak" class="kontak pt-5 pb-5">
+        <div class="container">
+            <h2 style="color: #C0C0C0;" class="mb-4">Hubungi Saya</h2>
+            <div class="row">
+                <div class="col-md-8 col-xl-6">
+                    <form method="post">
+                        <div class="mb-3">
+                            <label style="color: #C0C0C0;" for="first_name" class="form-label">Nama Depan</label>
+                            <input id="first_name" class="form-control" placeholder="Nama Depan Anda" name="first_name">
+                        </div>
+                        <div class="mb-3">
+                            <label style="color: #C0C0C0;" for="last_name" class="form-label">Nama Belakang</label>
+                            <input id="last_name" class="form-control" placeholder="Nama Belakang Anda"
+                                name="last_name">
+                        </div>
+                        <div class="mb-3">
+                            <label style="color: #C0C0C0;" for="email" class="form-label">Email</label>
+                            <input id="email" class="form-control" placeholder="Email Anda" type="email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label style="color: #C0C0C0;" for="message" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="message" rows="4" name="message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" name="submit">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: #003366;">
+        <div style="color: #C0C0C0;" class="container pt-3 pb-3">
+            Copyright 2024 - All Rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>
